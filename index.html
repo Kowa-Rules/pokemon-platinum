@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Platinum Emulator</title>
 </head>
+
 <body style="margin:0; background:black; display:flex; justify-content:center; align-items:center; height:100vh;">
 
 <div style="width:640px;height:480px;max-width:100%">
@@ -21,12 +22,12 @@
     // ROM file name
     EJS_gameUrl = 'pokemon-platinum.nds';
 
-    // Path to EmulatorJS data folder
-    EJS_pathtodata = 'data/';
+    // Load EmulatorJS files from CDN
+    EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
 </script>
 
-<!-- Loads EmulatorJS -->
-<script src="data/loader.js"></script>
+<!-- Load EmulatorJS -->
+<script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 
 </body>
 </html>
