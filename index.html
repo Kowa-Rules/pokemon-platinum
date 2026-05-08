@@ -6,30 +6,28 @@
     <title>Pokemon Platinum</title>
 </head>
 
-<body style="margin:0; background:black; display:flex; justify-content:center; align-items:center; height:100vh;">
+<body style="margin:0; background:black;">
 
 <div id="game"></div>
 
 <script>
-    // Attach emulator
     EJS_player = '#game';
 
-    // Use melonDS core
-    EJS_core = 'melonds';
+    // Nintendo DS core
+    EJS_core = 'nds';
 
     // ROM
     EJS_gameUrl = './pokemon-platinum.nds';
 
     // BIOS files
-    EJS_biosUrl = './bios7.bin';
-    EJS_biosUrl2 = './bios9.bin';
-    EJS_biosUrl3 = './firmware.bin';
+    EJS_bios7 = './bios7.bin';
+    EJS_bios9 = './bios9.bin';
+    EJS_firmware = './firmware.bin';
 
-    // EmulatorJS CDN
+    // EmulatorJS data
     EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
 </script>
 
-<!-- Load EmulatorJS -->
 <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 
 </body>
