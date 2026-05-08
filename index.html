@@ -3,30 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Platinum Emulator</title>
+    <title>Pokemon Platinum</title>
 </head>
 
 <body style="margin:0; background:black; display:flex; justify-content:center; align-items:center; height:100vh;">
 
-<div style="width:640px;height:480px;max-width:100%">
-    <div id="game"></div>
-</div>
+<div id="game"></div>
 
 <script>
-    // Attach emulator to page
     EJS_player = '#game';
 
-    // Nintendo DS emulator core
-    EJS_core = 'desmume';
+    // Use EmulatorJS DS core
+    EJS_core = 'nds';
 
-    // ROM file name
-    EJS_gameUrl = 'pokemon-platinum.nds';
+    // ROM file
+    EJS_gameUrl = './pokemon-platinum.nds';
 
-    // Load EmulatorJS files from CDN
+    // EmulatorJS CDN
     EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
 </script>
 
-<!-- Load EmulatorJS -->
 <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 
 </body>
