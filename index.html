@@ -11,23 +11,25 @@
 <div id="game"></div>
 
 <script>
+    // Attach emulator
     EJS_player = '#game';
 
-    // Nintendo DS core
-    EJS_core = 'nds';
+    // Use melonDS core
+    EJS_core = 'melonds';
 
     // ROM
     EJS_gameUrl = './pokemon-platinum.nds';
 
-    // BIOS / Firmware
-    EJS_bios7 = './bios7.bin';
-    EJS_bios9 = './bios9.bin';
-    EJS_firmware = './firmware.bin';
+    // BIOS files
+    EJS_biosUrl = './bios7.bin';
+    EJS_biosUrl2 = './bios9.bin';
+    EJS_biosUrl3 = './firmware.bin';
 
     // EmulatorJS CDN
     EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
 </script>
 
+<!-- Load EmulatorJS -->
 <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 
 </body>
